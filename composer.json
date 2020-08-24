@@ -1,0 +1,22 @@
+{
+    "name": "imoca/count-min-sketch",
+    "description": "A count min sketch implementation store on disk.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imoca",
+            "email": "mickan007@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Imoca\\CountMinSketch\\": "src/",
+            "Imoca\\CountMinSketchTest\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7|^6.0"
+    }
+}
