@@ -20,10 +20,12 @@ jobs:
       #Install deps with composer
       - name: Install dependencies
         uses: php-actions/composer@v2
-        
+       
+      - name: Run tests
+        uses: php-actions/phpunit@v9
       # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #- name: Run Super-Linter
+      #  uses: github/super-linter@v3
+      #  env:
+      #    DEFAULT_BRANCH: master
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
