@@ -24,7 +24,7 @@ jobs:
       - name: Run tests
         uses: php-actions/phpunit@v9
         with:
-          configuration: test/phpunit.xml
+          configuration: tests/phpunit.xml
           args: --coverage-text
 
       # Runs the Super-Linter action
